@@ -6,7 +6,7 @@ client     = no
 cert    = ./stunnel.pem
 
 ; port to listen on
-accept  = 3001
+accept  = 443
 
 ; upstream port
-connect = 3000
+connect = 18000

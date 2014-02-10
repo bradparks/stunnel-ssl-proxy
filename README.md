@@ -1,3 +1,14 @@
+### I just forked this repo.... the original is probably more up to date, but here's some quick tips on using this:
+
+* My goal was to be able to map port 18000 (http unencrypted) to port 443, encrypted.
+* Install "stunnel" using "brew install stunnel"
+* Download this repo
+* Edit "stunnel.cnf" file and change your ports to "accept = 443" and connect = 80". 
+* Then to start the server, run "sudo ./start-server.sh" 
+* Tada!
+* Note: I came across stunnel and this repo as a result of this SuperUser question: http://superuser.com/questions/714956/port-forward-port-80-to-port-443-regardless-of-server-on-port-80
+
+
 # About
 
 When I do development it is a pain to set up a web server that can handle HTTPS. Especially when I use node.js I want my development and my production code to be as close as possible. In production node listens on HTTP and a proxy in front provides SSL. 
